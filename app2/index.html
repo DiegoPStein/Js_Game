@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+		<link rel="stylesheet"  href="estilo.css">
+
+		<script>
+			function iniciarJogo(){
+				var nivel = document.getElementById('nivel').value
+
+				if (nivel === '') {
+					alert(' Selecione um nivel para iniciar o jogo! ')
+					return false
+
+				}
+				window.location.href = "app.html?" + nivel
+
+			}
+
+		</script>
+
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<img src="imagens/game.png">
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<div class="mb-2">
+							<select class="form-control" id="nivel">
+								<option value=""> -- SELECIONE O NÍVEL -- </option>
+								<option value="bronze">Bronze</option>
+								<option value="ouro">Ouro</option>
+								<option value="diamante">Diamante</option>
+
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()">INICIAR JOGO</button>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</body>
+</html>
