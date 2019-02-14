@@ -2,7 +2,7 @@
 var altura = 0
 var largura = 0
 var vidas = 1
-var tempo = 10
+var tempo = 15
 
 
 var criaMosquitoTempo = 1500
@@ -13,9 +13,9 @@ nivel = nivel.replace('?', '')
 if(nivel === 'bronze'){
 	criaMosquitoTempo = 1500
 }else if(nivel === 'ouro'){
-	criaMosquitoTempo = 1000
+	criaMosquitoTempo = 950
 }else if(nivel === 'diamante'){
-	criaMosquitoTempo = 750
+	criaMosquitoTempo = 700
 }
 
 function ajustaTamanhoPalcoJogo(){
